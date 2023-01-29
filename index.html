@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Ubuntu:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="js-weatherHeader">
+        <h1 class="header-title">Weather Forecast</h1>
+        <select name="lang" class="header-language" id="js-language">
+          <option value="en">En</option>
+          <option value="ua">Ua</option>
+        </select>
+        <form class="header-form" id="js-weatherForm">
+          <input
+            class="header-input"
+            type="text"
+            placeholder="Enter City Name"
+            name="weater-input"
+          />
+          <input class="header-button" type="submit" value="Show" />
+        </form>
+      </header>
+
+      <!-- !render -->
+      <!-- card -->
+
+      <!-- <div class="card" id="js-weatherCard">
+        <div class="city">London<span>GB</span></div>
+        <div class="icon-container">
+          <div class="temperature">11<sup>°c</sup></div>
+          <img src="./img/4 1.png" alt="weather" class="weather-icon" />
+        </div>
+        <div class="forecast">Overcast</div>
+      </div> -->
+      <footer class="footer">
+        <a
+          href="https://www.figma.com/file/wNgeDrzx4oz8KZG5jUL0m2/Weather?node-id=0%3A1&t=qu0tJSiFeaLmIHzK-0"
+          target="_blank"
+        >
+          Custom Design</a
+        >
+      </footer>
+    </div>
+    <!-- script -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+@import "./reset.css";
+
+/* html,
+body {
+  min-height: 100vh;
+}
+body {
+  display: flex;
+  flex-direction: column;
+} */
+
+.wrapper {
+  /* Для фіксування футера внизу */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  padding: 40px 15px;
+  background: linear-gradient(92.59deg, #136a8a 0.83%, #39dacc 103.06%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-title {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.header-form {
+  position: relative;
+}
+.header-input {
+  width: 509px;
+  height: 50px;
+  background: #fffbfb;
+  border-radius: 6px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1;
+  padding: 10px 0 10px 20px;
+}
+.header-input::placeholder {
+  color: #136a8a;
+}
+.header-button {
+  position: absolute;
+  right: 0px;
+  width: 150px;
+  height: 50px;
+  background: #ce3939;
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+.header-button:hover {
+  background: #ae4545;
+}
+/* card */
+.card {
+  position: relative;
+  margin: 50px auto;
+  min-width: 394px;
+  height: 255px;
+  padding: 25px;
+  background: #fffcfc;
+  box-shadow: 0px 8px 50px rgba(9, 66, 87, 0.26);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: 100%;
+  background: #fffcfc;
+  box-shadow: 0px 8px 50px rgba(9, 66, 87, 0.26);
+  border-radius: 6px;
+  left: 5px;
+  z-index: -1;
+  top: 15px;
+}
+.card__error {
+  color: #ae4545;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.city {
+  margin-bottom: 20px;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1;
+}
+.city span {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 2px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  padding: 4px 5px;
+  background: #ce3939;
+  border-radius: 6px;
+  vertical-align: top;
+  color: #fffdfd;
+}
+.temperature {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 70px;
+  margin-bottom: 15px;
+}
+.temperature sup {
+  font-size: 40px;
+}
+.icon-wrapper {
+  max-width: 140px;
+  /* height: 120px; */
+  /* position: relative; */
+}
+.weather-icon {
+  width: 100%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+.forecast {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 5px;
+  color: #000000;
+}
+.footer {
+  /* position: absolute; */
+
+  width: 100%;
+  height: 28px;
+  background: linear-gradient(
+    92.59deg,
+    rgba(19, 106, 138, 0.3) 0.83%,
+    rgba(57, 218, 204, 0.3) 103.06%
+  );
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  padding: 7px;
+  color: #000000;
+  /* Для фіксування футера внизу */
+  margin-top: auto;
+}
+/* .footer a {
+} */
